@@ -7,7 +7,7 @@ daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 
 class date:
 
     def isBiss(self):
-        return (anno % 4 == 0 and anno % 100 != 0) or anno % 400==0
+        return (self.year % 4 == 0 and self.year % 100 != 0) or self.year % 400==0
 
     def m(self):
         ms = m[self.month]
