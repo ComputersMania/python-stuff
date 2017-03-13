@@ -11,7 +11,7 @@ class date:
 
     def m(self):
         ms = m[self.month]
-        if type(ms) == 'tuple':
+        if type(ms) is tuple:
             return ms[1] if self.isBiss() else ms[0]
         else:
             return ms
