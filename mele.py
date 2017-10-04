@@ -7,8 +7,9 @@ def picked(startDay, startPop, life):                                           
     for day in range(0 + startDay, life + startDay):
         currentPickRate = pickRate[day % len(pickRate)]
         if population >= currentPickRate:
-            picked += currentPickRate
-            population -= currentPickRate
+            sets = population % currentPickRate
+            picked += currentPickRate * sets
+            population -= currentPickRate * sets
         population += 1
     return picked
 
