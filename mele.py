@@ -9,7 +9,6 @@ def picked(startDay, startPop, life):                                           
         if population >= currentPickRate:
             picked += currentPickRate
             population -= currentPickRate
-            print('test')
         population += 1
     return picked
 
